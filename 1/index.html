@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Little Lemon</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <h1 id="header1">Our Menu</h1>
+        <h2>Fried Calamari</h2>
+        <p>Squid, buttermilk</p>
+        <img src="calamari.jpg" width="240" height="135" alt="A calamari">
+
+        <h2>Falafel</h2>
+        <p>Chickpea, herbs and spices.</p>
+        <img src="falafel.jpeg" width="240" height="135" alt="A falafel">
+        <h2>Pasta Salad</h2>
+        <p>Lattuce, vegetables and mozzrella.</p>
+        <img src="salad.jpg" width="240" height="135" alt="A pasta salad">
+        <a href="location.html">Our Location</a>
+
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+        <table>
+            <tr>
+                <th>Dish</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Falafel</td>
+                <td>$10.00</td>
+            </tr>
+            <tr>
+                <td>Pasta Salad</td>
+                <td>$12.00</td>
+            </tr>
+        </table>
+
+        <form action="/registration" method="post">
+            <label for="username">Username:</label><br>
+            <input type="text" name="username"><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" /><br>
+            <input type="submit" /><br>
+            <br>
+
+            <input type="checkbox" name="dog" value="Dog"/>
+            <label for="dog">I own a Dog</label><br>
+            <input type="checkbox" name="cat" value="Cat"/>
+            <label for="cat">I own a Cat</label><br>
+        </form>
+    </body>
+</html>
