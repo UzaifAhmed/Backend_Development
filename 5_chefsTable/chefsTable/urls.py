@@ -21,8 +21,10 @@ from myapp import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    # path('', views.home, name= 'home')
+    path('home/', views.home, name= 'home'),
     path('', include('myapp.urls')),     # Route, View
     path('display_date/', views.display_date),
     path('menu/', views.menu),
 ]
+
+handler404 = 'chefsTable.views.handler404'
