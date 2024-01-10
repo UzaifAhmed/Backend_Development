@@ -27,6 +27,10 @@ def menuitems(request, dish):
     }
     description = items[dish]
     return HttpResponse(f'<h2 style="color: #B4CA64"> {dish} </h2>' +description)
+
+def about(request):
+    about_content = {'about': "Based in Chicago, Illinois, Little Lemon is a Brand"}
+    return render(request, "about.html", about_content)
 # def menu_by_id(request, menu_by_id):
 #     menu = Menu.objects.get(pk=menu_id)
 #     # return HttpResponse(f"{menu.menu_item}: Type of {menu.cuisine} cuisine")
